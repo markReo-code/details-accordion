@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+.section {
+    padding: 100px 0;
+    background-color: #F6F3EA;
+    height: 100vh;
+}
+
+.inner {
+    width: 100%;
+    max-width: 1106px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.accordion + .accordion {
+    margin-top: 40px;
+}
+
+.accordion {
+  border: 1px solid #aaa;
+  width: 100%;
+}
+
+.accordion-title {
+width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+  background: #f7f7f7;
+  cursor: pointer;
+}
+
+.accordion-content {
+    padding: 1em;
+    background-color: #ffffff;
+    line-height: 1.5;
+}
+
+.accordion__arrow {
+    transition: transform 500ms;
+}
+
+.accordionIsOpen .accordion__arrow {
+    transform: rotate(-180deg);
+}
